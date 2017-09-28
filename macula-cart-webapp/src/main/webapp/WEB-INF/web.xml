@@ -91,7 +91,7 @@
 	<listener>
 		<listener-class>org.macula.core.listener.MaculaContextListener</listener-class>
 	</listener>
-	
+
 	<servlet>
 		<servlet-name>appServlet</servlet-name>
 		<servlet-class>org.macula.core.mvc.MaculaDispatcherServlet</servlet-class>
@@ -101,6 +101,11 @@
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>jsp</servlet-name>
+		<url-pattern>*.html</url-pattern>
+	</servlet-mapping>
 
 	<servlet-mapping>
 		<servlet-name>appServlet</servlet-name>
